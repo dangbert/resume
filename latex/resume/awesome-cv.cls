@@ -396,7 +396,8 @@
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
-          \faPhone\acvHeaderIconSep\@mobile%
+          % clickable phone number link https://tex.stackexchange.com/a/53523
+          \faPhone\acvHeaderIconSep\href{tel:\@mobile}{\@mobile}%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@email}}%
