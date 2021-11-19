@@ -529,13 +529,24 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#1#3#4}
+      % when position, location, and date are omitted:
       {\entrytitlestyle{#2} \\
         \multicolumn{1}{L{\textwidth}}{\descriptionstyle{#5}}}
       {\ifempty{#2#3}
+          % when project and location are not provided (omit that row):
           {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+          % otherwise:
           {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
             \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-        \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+          \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+          % hack for now if theres an extra row with empty description:
+          \ifempty{#5}{\vspace{-4mm}}{}
+          % TODO: better to avoid inserting the row altogether...
+          %   https://groups.google.com/g/comp.text.tex/c/_3QLLTBgrKo/m/oOgALZjs42EJ
+          %   https://ramblingacademic.com/2016/10/31/multiple-latex-document-versions/
+          %   \newif\ifDesc\ifempty{#5}{\Descfalse}{\Desctrue}
+          %   \ifDesc \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \fi}
+          }
   \end{tabular*}%
 }
 
