@@ -529,9 +529,9 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#1#3#4}
-      % when position, location, and date are omitted:
+      % when position, location, and date are omitted (e.g. in projects.tex)
       {\entrytitlestyle{#2} \\
-        \multicolumn{1}{L{\textwidth}}{\descriptionstyle{#5}}}
+        \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
       {\ifempty{#2#3}
           % when project and location are not provided (omit that row):
           {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
