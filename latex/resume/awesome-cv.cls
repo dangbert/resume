@@ -548,7 +548,7 @@
           %   \ifDesc \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \fi}
           }
   % hack to help resume fit on one page:
-  \vspace{-1mm}
+  %\vspace{-1mm}
   \end{tabular*}%
 }
 

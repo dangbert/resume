@@ -1,18 +1,6 @@
 \cvsection{Projects}
 
 \begin{cventries}
-  % TODO: maybe move this to experience section...
-  \cventry
-    {} % Empty position
-    {\href{https://global-board.org}{global-board.org}} % Project
-    {} % Empty location
-    {} % Empty date
-    {
-      \begin{cvitems} % Description(s) bullet points
-      \item {Designed and implemented a website for learning about every country (showing whats trending there and embedding learning resources/videos).  Implemented with React, Node.js, PostgreSQL, hosted on Google Cloud, and using the YouTube, Spotify, and Twitter APIs.}
-      \end{cvitems}
-    }
-
   \cventry
     {} % Empty position
     {\href{https://github.com/dangbert/AI}{A.I. Algorithms}} % Project
@@ -23,7 +11,20 @@
       \item {Implemented a feed forward neural network from scratch in Python using NumPy and evaluated the performance on the MNIST dataset after studying the linear algebra and calculus needed to implement backpropgation through \href{http://neuralnetworksanddeeplearning.com/}{an online course}.}
       \item {Implemented the Hill Climbing and Simulated Annealing optimization algorithms in Python 
 to optimize employee shift schedules with respect to a heuristic function.}
-      \item {Implemented a decision tree, the kmeans classification algorithm, as well as tf-idf for practicing NLP.}
+      \item {Implemented a decision tree for data classification, the K-Means classification algorithm, various graph search algorithms, and the tf-idf algorithm for practicing NLP.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {} % Empty position
+    {\href{https://github.com/dangbert/college/tree/master/cmsc491-vision}{Computer Vision (Research Course)}} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Implemented an algorithm to stitch overlapping images together into a panorama.  Used Harris Corner Detection to identify key points in each image, and the RANSAC algorithm to identify the best points to use to compute a perspective transformation for aligning the images.}
+        \item {Implemented image classifiers (distinguishing dogs and cats) using a Support Vector Machine (SVM), and the K-Nearest Neighbour (KNN) algorithm.  Experimented with different methods of generating descriptors for image features (e.g. SIFT descriptors) and evaluated performace using K-Fold cross validation.}
+        \item {Implemented (as a reasearch project) a traffic light detector algorithm using Histogram of Oriented Gradients (HOG) features, a Support Vector Machine (SVM).  Applied the model to test images using a gaussian pyramid with a sliding window.}
       \end{cvitems}
     }
 
@@ -34,7 +35,8 @@ to optimize employee shift schedules with respect to a heuristic function.}
     {} % Empty date
     {
       \begin{cvitems} % Description(s) bullet points
-      \item {Implemented a ray tracer in C++ capable of rendering images and videos of 3D scenes with shading, shadows, and reflections (using lots of linear algebra).  Also implemented a rasterizer and 3D mesh smoother algorithm.}
+      \item {Implemented a ray tracer in C++ capable of rendering images and videos of 3D scenes with shading, shadows, and reflections.  Also implemented a rasterizer and 3D mesh smoother algorithm.  This project used a heavy amount of applied linear algebra and was implemented from scratch.}
       \end{cvitems}
     }
+
 \end{cventries}
