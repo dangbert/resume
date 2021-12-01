@@ -18,3 +18,6 @@ apt list --installed | grep -i 'textlive'       # useful
 # build resume:
 xelatex resume.tex
 ````
+
+## Spellcheck Options:
+* Upload the final pdf to [this site](https://www.online-spellcheck.com/spell-check-file).
